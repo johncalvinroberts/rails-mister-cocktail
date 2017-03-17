@@ -1,6 +1,9 @@
-<%= simple_form_for [@cocktail, @dose] do |f| %>
-<%= f.error_notification %>
-<%= f.input :ingredient_id, collection: Ingredient.all%>
-<%= f.input :description %>
-<%= f.button :submit, class:"btn-default" %>
-<% end %>
+<div class="container show-container">
+
+  <%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :ingredient_id, collection: Ingredient.all%>
+  <%= f.input :description %>
+  <%= f.button :submit, class:"btn-default" %>
+  <% end %>
+</div>

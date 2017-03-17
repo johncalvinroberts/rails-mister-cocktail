@@ -1,12 +1,32 @@
-<% @cocktails.each do |cocktail| %>
-<div class="col-xs-12 col-sm-4">
-  <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path ("marmot.jpg") %>);">
-    <div class="card-description">
-     <h2> <%=cocktail.name.capitalize%></h2>
-     <p></p>
-   </div>
-   <%= link_to "",cocktail_path(cocktail), class:"card-link" %>
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path 'background.jpg' %>);">
+  <div class="banner-content">
+    <h1>Chinese Medicine Cocktails</h1>
+    <p>For your health</p>
+    <%= link_to "add a cocktail", new_cocktail_path, class:"btn btn-default" %>
   </div>
 </div>
-<% end %>
+
+
+ <div class="wrapper text-center">
+ <h2>best chinese medicine cocktails~~</h2>
+        <div class="container">
+          <div class="row">
+            <% @cocktails.each do |cocktail| %>
+            <div class="col-xs-12 col-sm-4">
+              <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= cl_image_path(cocktail.photo.path) %>);">
+                <div class="card-description">
+                 <h2> <%=cocktail.name.capitalize%></h2>
+                 <p></p>
+               </div>
+               <%= link_to "",cocktail_path(cocktail), class:"card-link" %>
+              </div>
+            </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
 

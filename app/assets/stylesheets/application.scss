@@ -13,6 +13,10 @@
 @import "components/index";
 @import "pages/index";
 
+body {
+  color:black;
+}
+
 .wrapper {
   height: auto;
   margin: 0px auto;
@@ -20,23 +24,19 @@
   background-color: $gray;
 }
 
-* {
-  color: black;
-  text-decoration: none;
-}
 
-ul{
-  margin: 20px;
-  list-style: none;
-  padding-left: 0px;
-}
+// ul{
+//   margin: 20px;
+//   list-style: none;
+//   padding-left: 0px;
+// }
 
-.doses{
-  margin:40px;
-  widows: auto;
-}
-ul li {
-  text-align:left;
-  font-size: 0.9em;
-}
+// .doses{
+//   margin:40px;
+//   widows: auto;
+// }
+// ul li {
+//   text-align:left;
+//   font-size: 0.9em;
+// }
 
