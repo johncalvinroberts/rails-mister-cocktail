@@ -1,1 +1,13 @@
 // Your footer style
+
+.footer {
+  position: absolute;
+  background-color: #4A4A4A;
+  padding: 20px;
+}
+
+p {
+  text-align: left;
+  color: $gray;
+  margin: 20px;
+}
