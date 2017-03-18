@@ -1,9 +1,11 @@
-<div class="container show-container">
-<%= simple_form_for @cocktail do |f| %>
-<%= f.error_notification %>
-<%= f.input :name, :label => "name of cocktail"%>
-<%= f.input :photo, as: :attachinary %>
-<%= f.button :submit, class:"btn-default" %>
-<% end %>
-
+<div class="wrapper">
+  <div class="container show-container-white">
+  <%= simple_form_for @cocktail do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :name, label: "name of cocktail"%>
+  <%= f.input :description, label: "description of cocktail plz!", as: :text %>
+  <%= f.input :photo, as: :attachinary %>
+  <%= f.button :submit, class:"btn-default" %>
+  <% end %>
+  </div>
 </div>

@@ -12,8 +12,8 @@ ul{
 }
 
 .show-container {
-  width: 400px;
-  color:black;
+  max-width: 400px;
+  color:$black;
   margin: 30px auto;
   background: $gray;
   padding: 40px;
@@ -22,4 +22,14 @@ ul{
 .btn{
   margin: 20px auto;
   // text-align: center;
+}
+
+.show-container-white {
+  max-width: 400px;
+  color:$black;
+  margin: 30px auto;
+  background: $white;
+  padding: 40px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+
 }
