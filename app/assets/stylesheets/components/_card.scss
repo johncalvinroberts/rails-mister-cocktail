@@ -5,6 +5,7 @@
   color: white;
   position: relative;
   margin: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 .card-user {
   position: absolute;
@@ -20,18 +21,17 @@
 }
 .card-description {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  text-align: left;
+  top: 100px;
+  left: 20px;
 }
 .card-description h2 {
   font-size: 24px;
-  left:10px;
-  bottom: 50px;
+  margin: 0px;
 }
 .card-description p {
   font-size: 13px;
-  left: 10px;
-  bottom:30px;
+  margin: 0px;
   }
 .card-link {
   position: absolute;
